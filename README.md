@@ -25,18 +25,6 @@ Ludus is a **multi-purpose, interactive Discord bot** built by Psy (aka Veylein 
 - Jokes, memes, and riddles
 - Animal photos and fun facts
 - Randomized surprises for server engagement
-
----
-
-## Installation
-
-> ⚠️ Requires **Node.js v18+** and **FFmpeg** for music playback.
-
-```bash
-# Clone the repo
-git clone https://github.com/YOUR_USERNAME/ludus.git
-cd ludus
-
 # Install dependencies
 npm install
 
