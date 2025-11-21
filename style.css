@@ -7,16 +7,17 @@
 }
 
 body {
-    background: linear-gradient(to bottom, #FFDAB9, #FF8C00); /* Warm fall gradient */
-    color: #3b2f2f;
+    background: radial-gradient(circle at top, #1a1a1a, #000);
+    color: #e5e5e5;
     line-height: 1.6;
     min-height: 100vh;
 }
 
 /* --- Header --- */
 header {
-    background-color: rgba(139, 69, 19, 0.85); /* Fall brown */
-    color: #fff;
+    background: rgba(0, 0, 0, 0.85);
+    border-bottom: 2px solid #D4AF37;
+    color: #D4AF37;
     padding: 20px 0;
     text-align: center;
     position: sticky;
@@ -33,15 +34,16 @@ nav {
 }
 
 nav a {
-    color: #fff;
+    color: #D4AF37;
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease;
+    transition: 0.3s ease;
 }
 
 nav a:hover {
-    color: #FFD700; /* Golden accent */
+    color: #fff;
+    text-shadow: 0 0 10px #D4AF37;
 }
 
 /* --- Main Section --- */
@@ -53,52 +55,53 @@ main {
 
 /* --- Cards/Content Blocks --- */
 .card {
-    background-color: rgba(255, 250, 240, 0.9);
+    background: rgba(15, 15, 15, 0.9);
+    border: 1px solid #D4AF37;
     border-radius: 12px;
     padding: 20px;
     margin: 20px 0;
-    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.35);
 }
 
 /* --- Headings --- */
 h1, h2, h3 {
-    color: #8B4513; /* Saddle brown */
+    color: #D4AF37;
     margin-bottom: 15px;
 }
 
-h1 {
-    font-size: 3rem;
-}
-
-h2 {
-    font-size: 2rem;
-}
+h1 { font-size: 3rem; }
+h2 { font-size: 2rem; }
 
 /* --- Buttons --- */
 button, .btn {
-    background-color: #FF8C00; /* Fall orange */
-    color: #fff;
+    background: linear-gradient(135deg, #D4AF37, #b89627);
+    color: #000;
     border: none;
     padding: 12px 25px;
     border-radius: 8px;
     cursor: pointer;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    letter-spacing: 0.5px;
+    transition: 0.3s ease;
 }
 
 button:hover, .btn:hover {
-    background-color: #FF7F50; /* Coral accent */
+    background: linear-gradient(135deg, #fff, #D4AF37);
+    color: #000;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.7);
 }
 
 /* --- Footer --- */
 footer {
-    background-color: rgba(139, 69, 19, 0.85);
-    color: #fff;
+    background: rgba(0, 0, 0, 0.85);
+    border-top: 2px solid #D4AF37;
+    color: #D4AF37;
     text-align: center;
     padding: 20px 0;
     margin-top: 40px;
@@ -106,13 +109,14 @@ footer {
 
 /* --- Links inside footer --- */
 footer a {
-    color: #FFD700;
+    color: #fff;
     text-decoration: none;
     margin: 0 10px;
+    transition: 0.3s ease;
 }
 
 footer a:hover {
-    text-decoration: underline;
+    color: #D4AF37;
 }
 
 /* --- Forms --- */
@@ -121,13 +125,22 @@ input, textarea, select {
     padding: 12px;
     margin: 10px 0 20px;
     border-radius: 8px;
-    border: 1px solid #ccc;
+    background: #111;
+    color: #fff;
+    border: 1px solid #444;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #D4AF37;
+    outline: none;
 }
 
 /* --- Code / Preformatted --- */
 code, pre {
-    background-color: rgba(255, 228, 196, 0.8); /* bisque */
-    padding: 5px;
+    background: rgba(30, 30, 30, 0.9);
+    border-left: 3px solid #D4AF37;
+    padding: 10px;
     border-radius: 5px;
+    color: #D4AF37;
     font-family: monospace;
 }
